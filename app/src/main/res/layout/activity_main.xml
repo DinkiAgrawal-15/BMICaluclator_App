@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="#000000"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI Calculator"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="35sp"
+        android:text="(1 feet = 30.48cm)"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textColor="#ffff"
+            android:textSize="30sp"/>
+        <EditText
+            android:id="@+id/edweg"
+            android:layout_width="95dp"
+            android:layout_height="55dp"
+            android:background="#ffff"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            android:hint="KG"
+            android:gravity="center"
+            android:layout_marginLeft="18dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Height"
+            android:textColor="#ffff"
+            android:textSize="30sp"/>
+        <EditText
+            android:layout_width="95dp"
+            android:id="@+id/edhei"
+            android:layout_height="55dp"
+            android:background="#ffff"
+            android:inputType="numberDecimal"
+            android:textSize="25sp"
+            android:hint="cm"
+            android:gravity="center"
+            android:layout_marginLeft="18dp"/>
+
+    </LinearLayout>
+
+<Button
+    android:layout_width="120dp"
+    android:layout_height="60dp"
+    android:id="@+id/btnres"
+    android:text="Result"
+    android:textSize="25sp"
+    android:textColor="#000"
+    android:textStyle="bold"
+    android:layout_marginTop="30dp"
+    android:background="@color/white"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter your Details"
+        android:id="@+id/txtenter"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:background="@color/cardview_light_background"
+        android:textColor="#a4c639"
+        android:layout_marginTop="30dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="BMI =?"
+        android:id="@+id/txtres"
+        android:textSize="25sp"
+        android:background="@color/cardview_light_background"
+        android:textStyle="bold"
+        android:textColor="#a4c639"
+        android:layout_marginTop="30dp"/>
+    <Button
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:id="@+id/btnreset"
+        android:text="Reset"
+        android:textSize="25sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:background="@color/white"/>
+</LinearLayout>
